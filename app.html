@@ -1,26 +1,38 @@
 <!doctype html>
 <html>
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <script src="https://cdn.tailwindcss.com"></script>
-  <script>
-    tailwind.config = {
-      theme: {
-        extend: {
-          colors: {
-            clifford: '#da373d',
-          }
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        clifford: '#da373d',
+                    }
+                }
+            }
         }
-      }
-    }
-  </script>
+    </script>
 </head>
+
 <body>
-  <h1 class="text-3xl font-bold underline">
-    Hello world!
-  </h1>
-  <div class="prose">
-    <!-- ... -->
+    <div class="max-w-md mx-auto bg-white rounded-xl shadow-md overflow-hidden md:max-w-2xl">
+        <div class="md:flex">
+            <div class="p-8">
+                <div class="uppercase tracking-wide text-sm text-indigo-500 font-semibold">CodeComplianceChecker
+                </div>
+                <a href="#" class="block mt-1 text-lg leading-tight font-medium text-black hover:underline">A great
+                    app
+                    for helping you stay up to date with your compliance processes</a>
+                <p class="mt-2 text-slate-500">The app just scans through you code and reminds you to update stale
+                    or
+                    outdated compliance documents.</p>
+            </div>
+        </div>
+    </div>
 </body>
+
 </html>
