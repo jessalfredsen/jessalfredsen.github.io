@@ -1,27 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Enabling data scientist to perform as data scientists</title>
     <meta name="JekyllTheme" content="Fuse Core by Thomas Jensen" />
-    <meta name="Description" content="Congratulations. You've found the dataset you're looking for. Whatever it is, we have it." />
-    <meta name="Keywords" content="dataset, ai, data, datageneration.ai, jess alfredsen, machine learning, data science," />
+    <meta name="Description"
+        content="Congratulations. You've found the dataset you're looking for. Whatever it is, we have it." />
+    <meta name="Keywords"
+        content="dataset, ai, data, datageneration.ai, jess alfredsen, machine learning, data science," />
     <meta name="Robots" content="index,follow" />
     <meta name="HandheldFriendly" content="true" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="canonical" href="https://datageneration.ai">
-    
+
     <!-- Google Analytics -->
     <!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-6Z5Z7PW2HL"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-6Z5Z7PW2HL"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
 
-  gtag('config', 'G-6Z5Z7PW2HL');
-</script>
+        gtag('config', 'G-6Z5Z7PW2HL');
+    </script>
 
 
     <!-- favicons -->
@@ -36,103 +39,159 @@
     <meta name="theme-color" content="#ffffff">
 
     <!-- Stylesheets -->
-    
+    <style>
+        a:link {
+            text-decoration: none;
+        }
+
+        a:visited {
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: none;
+        }
+
+        a:active {
+            text-decoration: none;
+        }
+
+        .float {
+            position: fixed;
+            text-decoration: none;
+            opacity: .6;
+            width: 120px;
+            height: 60px;
+            top: 40px;
+            right: 40px;
+            background-color: #1d1e22;
+            color: #FFF;
+            border-radius: 5px;
+            text-align: center;
+            box-shadow: 2px 2px 3px #999;
+        }
+
+        .my-float {
+            margin-top: 22px;
+        }
+    </style>
+
     <link rel="stylesheet" type="text/css" crossorigin="anonymous"
-          href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
-          integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk">
+        href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk">
     <link rel="stylesheet" type="text/css" href="/css/theme.css">
     <link rel="stylesheet" type="text/css" crossorigin="anonymous"
-          href="https://use.fontawesome.com/releases/v5.14.0/css/all.css"
-          integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc">
+        href="https://use.fontawesome.com/releases/v5.14.0/css/all.css"
+        integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc">
     <link rel="stylesheet" type="text/css"
-          href="https://fonts.googleapis.com/css?family=Open+Sans:400,700&subset=latin">
-    
-    
+        href="https://fonts.googleapis.com/css?family=Open+Sans:400,700&subset=latin">
+
+
     <script type="text/javascript">
         _linkedin_partner_id = "2910290";
         window._linkedin_data_partner_ids = window._linkedin_data_partner_ids || [];
         window._linkedin_data_partner_ids.push(_linkedin_partner_id);
-        </script><script type="text/javascript">
-        (function(){var s = document.getElementsByTagName("script")[0];
-        var b = document.createElement("script");
-        b.type = "text/javascript";b.async = true;
-        b.src = "https://snap.licdn.com/li.lms-analytics/insight.min.js";
-        s.parentNode.insertBefore(b, s);})();
-        </script>
-        <noscript>
-        <img height="1" width="1" style="display:none;" alt="" src="https://px.ads.linkedin.com/collect/?pid=2910290&fmt=gif" />
-        </noscript>
+    </script>
+    <script type="text/javascript">
+        (function () {
+            var s = document.getElementsByTagName("script")[0];
+            var b = document.createElement("script");
+            b.type = "text/javascript"; b.async = true;
+            b.src = "https://snap.licdn.com/li.lms-analytics/insight.min.js";
+            s.parentNode.insertBefore(b, s);
+        })();
+    </script>
+    <noscript>
+        <img height="1" width="1" style="display:none;" alt=""
+            src="https://px.ads.linkedin.com/collect/?pid=2910290&fmt=gif" />
+    </noscript>
 </head>
+
 <body class="fullscreen-background">
+    <a href="https://login.microsoftonline.com/3c286fb1-f038-405f-bcf0-bc5657037b05/oauth2/v2.0/authorize?client_id=947fd84a-5286-4fdd-9947-e255439efe17&response_type=token&redirect_uri=https://datageneration.ai/app&response_mode=fragment&scope=https%3A%2F%2Fgraph.microsoft.com%2Fmail.read&state=12345"
+        class="float">
+        <div class="my-float">Sign in </div>
+    </a>
+    <div class="glass-pane">
+        <div class="container fuse-core-content pb-4">
 
-<div class="glass-pane">
-<div class="container fuse-core-content pb-4">
+            <div class="row pt-sm-4">
+                <div class="col text-center"><img id="avatar" class="my-3 my-sm-4"
+                        alt="datageneration<span style='color:#e63946'>.</span>ai" src="/images/JAL.png"></div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <h1 class="text-center">datageneration<span style='color:#e63946'>.</span>ai</h1>
+                    <h3 class="text-center font-weight-light">Jess Alfredsen</h3>
+                </div>
+            </div>
 
-<div class="row pt-sm-4">
-    <div class="col text-center"><img id="avatar" class="my-3 my-sm-4" alt="datageneration<span style='color:#e63946'>.</span>ai"
-        src="/images/JAL.png"></div>
-</div>
-<div class="row">
-    <div class="col">
-        <h1 class="text-center">datageneration<span style='color:#e63946'>.</span>ai</h1>
-        <h3 class="text-center font-weight-light">Jess Alfredsen</h3>
+            <div class="row justify-content-center links pt-1 pt-sm-2">
+
+                <div class="col-xs-12 col-sm-2 col-lg-1 px-3 px-sm-0 mt-2 mt-sm-3 text-sm-center"><a
+                        href="mailto:jess@datageneration.ai"
+                        onclick="trackOutboundLink('Email', 'mailto:jess@datageneration.ai'); return false;"><i
+                            class="fas fa-envelope fa-fw"></i>
+                        <span class="d-inline d-sm-none">Email</span></a></div>
+
+                <div class="col-xs-12 col-sm-2 col-lg-1 px-3 px-sm-0 mt-2 mt-sm-3 text-sm-center"><a
+                        href="https://www.linkedin.com/in/jessalfredsen/"
+                        onclick="trackOutboundLink('LinkedIn', 'https://www.linkedin.com/in/jessalfredsen/'); return false;"><i
+                            class="fab fa-linkedin fa-fw"></i>
+                        <span class="d-inline d-sm-none">LinkedIn</span></a></div>
+
+                <div class="col-xs-12 col-sm-2 col-lg-1 px-3 px-sm-0 mt-2 mt-sm-3 text-sm-center"><a
+                        href="https://twitter.com/JessAlfredsen"
+                        onclick="trackOutboundLink('Twitter', 'https://twitter.com/JessAlfredsen'); return false;"><i
+                            class="fab fa-twitter fa-fw"></i>
+                        <span class="d-inline d-sm-none">Twitter</span></a></div>
+
+                <div class="col-xs-12 col-sm-2 col-lg-1 px-3 px-sm-0 mt-2 mt-sm-3 text-sm-center"><a
+                        href="https://github.com/jessalfredsen"
+                        onclick="trackOutboundLink('GitHub', 'https://github.com/jessalfredsen'); return false;"><i
+                            class="fab fa-github fa-fw"></i>
+                        <span class="d-inline d-sm-none">GitHub</span></a></div>
+
+                <div class="col-xs-12 col-sm-2 col-lg-1 px-3 px-sm-0 mt-2 mt-sm-3 text-sm-center"><a
+                        href="https://stackoverflow.com/users/1597866/wonderkid2"
+                        onclick="trackOutboundLink('Stack Overflow', 'https://stackoverflow.com/users/1597866/wonderkid2'); return false;"><i
+                            class="fab fa-stack-overflow fa-fw"></i>
+                        <span class="d-inline d-sm-none">Stack Overflow</span></a></div>
+
+                <div class="col-xs-12 col-sm-2 col-lg-1 px-3 px-sm-0 mt-2 mt-sm-3 text-sm-center"><a
+                        href="https://pastebin.com/2uqUi6Yu"
+                        onclick="trackOutboundLink('PGP Key', 'https://pastebin.com/2uqUi6Yu'); return false;"><i
+                            class="fas fa-key fa-fw"></i>
+                        <span class="d-inline d-sm-none">PGP Key</span></a></div>
+
+            </div>
+
+
+            <div class="row justify-content-center">
+                <div class="col mt-3 text-sm-center fuse-core-extra">datageneration<span
+                        style="color:#e63946">.</span>ai is an artifical intelligence company with the purpose of
+                    enabling data scientists, and helping businesses exploiting the full potential of their data.
+                    <br><br> We buy, sell, generate, aquire, scrape, forecast and predict - data. <br><br> If you are
+                    looking for a source of data for training a model, or a specific dataset for an analysis - we got
+                    you covered. If we don't already have the data on the shelfs, we'll make sure to get it ASAP. Most
+                    datasets are available both as one-time deals and on subscription basis. <br><br> Get in touch to
+                    hear more or request a dataset.
+                </div>
+            </div>
+
+
+        </div>
     </div>
-</div>
 
-<div class="row justify-content-center links pt-1 pt-sm-2">
-
-    <div class="col-xs-12 col-sm-2 col-lg-1 px-3 px-sm-0 mt-2 mt-sm-3 text-sm-center"><a
-        href="mailto:jess@datageneration.ai"
-        onclick="trackOutboundLink('Email', 'mailto:jess@datageneration.ai'); return false;"
-        ><i class="fas fa-envelope fa-fw"></i>
-        <span class="d-inline d-sm-none">Email</span></a></div>
-
-    <div class="col-xs-12 col-sm-2 col-lg-1 px-3 px-sm-0 mt-2 mt-sm-3 text-sm-center"><a
-        href="https://www.linkedin.com/in/jessalfredsen/"
-        onclick="trackOutboundLink('LinkedIn', 'https://www.linkedin.com/in/jessalfredsen/'); return false;"
-        ><i class="fab fa-linkedin fa-fw"></i>
-        <span class="d-inline d-sm-none">LinkedIn</span></a></div>
-
-    <div class="col-xs-12 col-sm-2 col-lg-1 px-3 px-sm-0 mt-2 mt-sm-3 text-sm-center"><a
-        href="https://twitter.com/JessAlfredsen"
-        onclick="trackOutboundLink('Twitter', 'https://twitter.com/JessAlfredsen'); return false;"
-        ><i class="fab fa-twitter fa-fw"></i>
-        <span class="d-inline d-sm-none">Twitter</span></a></div>
-
-    <div class="col-xs-12 col-sm-2 col-lg-1 px-3 px-sm-0 mt-2 mt-sm-3 text-sm-center"><a
-        href="https://github.com/jessalfredsen"
-        onclick="trackOutboundLink('GitHub', 'https://github.com/jessalfredsen'); return false;"
-        ><i class="fab fa-github fa-fw"></i>
-        <span class="d-inline d-sm-none">GitHub</span></a></div>
-
-    <div class="col-xs-12 col-sm-2 col-lg-1 px-3 px-sm-0 mt-2 mt-sm-3 text-sm-center"><a
-        href="https://stackoverflow.com/users/1597866/wonderkid2"
-        onclick="trackOutboundLink('Stack Overflow', 'https://stackoverflow.com/users/1597866/wonderkid2'); return false;"
-        ><i class="fab fa-stack-overflow fa-fw"></i>
-        <span class="d-inline d-sm-none">Stack Overflow</span></a></div>
-
-    <div class="col-xs-12 col-sm-2 col-lg-1 px-3 px-sm-0 mt-2 mt-sm-3 text-sm-center"><a
-        href="https://pastebin.com/2uqUi6Yu"
-        onclick="trackOutboundLink('PGP Key', 'https://pastebin.com/2uqUi6Yu'); return false;"
-        ><i class="fas fa-key fa-fw"></i>
-        <span class="d-inline d-sm-none">PGP Key</span></a></div>
-
-</div>
-
-
-<div class="row justify-content-center">
-    <div class="col mt-3 text-sm-center fuse-core-extra">datageneration<span style="color:#e63946">.</span>ai is an artifical intelligence company with the purpose  of enabling data scientists, and helping businesses exploiting the full potential of their data. <br><br> We buy, sell, generate, aquire, scrape, forecast and predict - data.  <br><br> If you are looking for a source of data for training a model, or a specific dataset for an  analysis - we got you covered. If we don't already have the data on the shelfs, we'll make sure  to get it ASAP. Most datasets are available both as one-time deals and on subscription basis. <br><br> Get in touch to hear more or request a dataset.
-</div>
-</div>
-
-
-</div>
-</div>
-
-<footer><div class="container"><div class="row">
-    <div class="col text-center">Built on the <a href="https://github.com/tsjensen/fuse-core">Fuse Core</a>
-    Jekyll theme.</div>
-</div></div></footer>
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col text-center">Built on the <a href="https://github.com/tsjensen/fuse-core">Fuse Core</a>
+                    Jekyll theme.</div>
+            </div>
+        </div>
+    </footer>
 
 </body>
+
 </html>

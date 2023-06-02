@@ -183,9 +183,10 @@
         const params = new Proxy(new URLSearchParams(window.location.hash.substring(1)), {
             get: (searchParams, prop) => searchParams.get(prop),
         });
-        // Get the value of "some_key" in eg "https://example.com/?some_key=some_value"
-        var value = 'Not set';
-        var logged_in_user = 'Not set';
+        
+        document.getElementById("user_display_name").innerText = '';
+        document.getElementById("access_token_field").innerText = 'Not set';
+        
         if (params.access_token != undefined) {
             console.log('Setting access token')
             document.getElementById("access_token_field").innerText = params.access_token;
@@ -193,19 +194,20 @@
             // Call MS Graph
             const userAction = async () => {
                 console.log('going to call somehting')
-                const response = await fetch('https://graph.microsoft.com/v1.0/me');
+                const response = await fetch('https://graph.microsoft.com/v1.0/me', {
+                    headers: {
+                        'Authorization': 'Bearer ' + params.access_token
+                    }
+                });
                 console.log(response)
                 const myJson = await response.json(); //extract JSON from the http response
                 console.log(myJson)
                 // do something with myJson
-                logged_in_user = myJson['displayName'];
-                document.getElementById("user_display_name").innerText = logged_in_user;
+                document.getElementById("user_display_name").innerText = myJson['displayName'];
             }
             userAction();
 
         }
-        document.getElementById("access_token_field").innerText = value;
-        document.getElementById("user_display_name").innerText = logged_in_user;
 
     </script>
 </body>
