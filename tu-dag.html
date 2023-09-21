@@ -1,0 +1,153 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                colors: {
+                    'blue': '#1fb6ff',
+                    'purple': '#7e5bef',
+                    'pink': '#ff49db',
+                    'orange': '#ff7849',
+                    'green': '#13ce66',
+                    'yellow': '#ffc82c',
+                    'gray-dark': '#273444',
+                    'gray': '#8492a6',
+                    'gray-light': '#d3dce6',
+                },
+                fontFamily: {
+                    sans: ['Graphik', 'sans-serif'],
+                    serif: ['Merriweather', 'serif'],
+                },
+                extend: {
+                    spacing: {
+                        'xl': '48rem',
+                        '8xl': '96rem',
+                        '9xl': '128rem',
+                    },
+                    borderRadius: {
+                        '4xl': '2rem',
+                    }
+                }
+            }
+        }
+    </script>
+    <script>
+        async function getMe(access_token) {
+            const response = await fetch('https://graph.microsoft.com/v1.0/me', {
+                headers: {
+                    'Authorization': 'Bearer ' + access_token
+                }
+            });
+            console.log(response)
+            const myJson = await response.json(); //extract JSON from the http response
+            console.log(myJson)
+            return myJson
+        }
+
+        async function getGroups(access_token) {
+            const response = await fetch('https://graph.microsoft.com/v1.0/me/transitiveMemberOf/microsoft.graph.group?$count=true', {
+                headers: {
+                    'Authorization': 'Bearer ' + access_token
+                }
+            });
+            console.log(response)
+            const myJson = await response.json(); //extract JSON from the http response
+            console.log(myJson)
+            // do something with myJson
+            return myJson
+        }
+    </script>
+
+</head>
+
+<body>
+    <div class="max-w-md mx-auto bg-white rounded-xl shadow-md overflow-hidden md:max-w-2xl">
+        <div class="md:flex">
+            <div class="p-8">
+                <div class="uppercase tracking-wide text-sm text-indigo-500 font-semibold">HistoryLens: HISTORYLENS: MING DYNASTY EDITION
+                </div>
+                <a href="https://chat.openai.com/share/86815f4e-674c-4410-893c-4ae3f1b7412e" class="block mt-1 text-lg leading-tight font-medium text-black hover:underline">
+                    Klik her: https://chat.openai.com/share/86815f4e-674c-4410-893c-4ae3f1b7412e
+                </a>
+                <p class="mt-2 text-slate-500">En meget detaljeret prompt, der simulerer en historisk person. Formuleret som et rollespil.</p>
+            </div>
+        </div>
+    </div>
+    <div class="max-w-md mx-auto bg-white rounded-xl shadow-md overflow-hidden md:max-w-2xl">
+        <div class="md:flex">
+            <div class="p-8">
+                <div class="uppercase tracking-wide text-sm text-indigo-500 font-semibold">Access token:
+                </div>
+                <p id="access_token_field" class="mt-2 text-slate-500"></p>
+            </div>
+        </div>
+    </div>
+    <div class="max-w-md mx-auto bg-white rounded-xl shadow-md overflow-hidden md:max-w-2xl">
+        <div class="md:flex">
+            <div class="p-8">
+                <div class="uppercase tracking-wide text-sm text-indigo-500 font-semibold">Logged in user:
+                </div>
+                <p id="user_display_name" class="mt-2 text-slate-500"></p>
+            </div>
+        </div>
+    </div>
+    <div class="max-w-md mx-auto bg-white rounded-xl shadow-md overflow-hidden md:max-w-2xl">
+        <div class="md">
+            <div class="p-8">
+
+                <h2 class="mb-2 text-lg font-semibold text-gray-900 dark:text-white">Groups:</h2>
+                <ul id="groupsList" class="max-w-md space-y-1 text-gray-500 list-disc list-inside dark:text-gray-400">
+                    
+                </ul>
+
+            </div>
+        </div>
+
+    </div>
+
+    <script>
+        const params = new Proxy(new URLSearchParams(window.location.hash.substring(1)), {
+            get: (searchParams, prop) => searchParams.get(prop),
+        });
+
+        document.getElementById("user_display_name").innerText = '';
+        document.getElementById("access_token_field").innerText = 'Not set';
+
+        if (params.access_token != undefined) {
+            console.log('Setting access token')
+            document.getElementById("access_token_field").innerText = params.access_token;
+
+            // Call MS Graph
+            getMe(params.access_token).then((meResponse) => {
+                console.log("meResponse")
+                console.log(meResponse)
+                document.getElementById("user_display_name").innerText = meResponse['displayName'];
+            }
+            ).catch((error) => {
+                console.log(error)
+            })
+
+            getGroups(params.access_token).then(myGroups => {
+                console.log("myGroups")
+                console.log(myGroups)
+                var ul = document.getElementById("groupsList");
+                myGroups.value.forEach(group => {
+                    var li = document.createElement("li");
+                    li.appendChild(document.createTextNode("Four"));
+                    li.innerText = group.displayName
+                    li.setAttribute("id", "element4"); // added line
+                    ul.appendChild(li);
+                });
+
+            })
+        }
+
+    </script>
+</body>
+
+</html>
