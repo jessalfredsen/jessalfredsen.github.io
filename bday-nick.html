@@ -2,6 +2,7 @@
 <html>
 
 <head>
+    <!-- <script src="https://cdn.tailwindcss.com"></script> -->
     <style>
         body {
             background-image: linear-gradient(to right top, #1f0537, #380c60, #55108c, #7413bb, #9612eb);
@@ -11,10 +12,45 @@
             background-attachment: fixed;
         }
 
+        h1 {
+            color: #111;
+            font-family: 'Helvetica Neue', sans-serif;
+            /* font-size: 275px; */
+            font-weight: bold;
+            letter-spacing: -1px;
+            line-height: 1;
+            text-align: center;
+        }
+
+
+        h2 {
+            color: #111;
+            font-family: 'Open Sans', sans-serif;
+            /* font-size: 30px; */
+            font-weight: 300;
+            line-height: 32px;
+            margin: 0 0 72px;
+            text-align: center;
+        }
+
+
+        p {
+            /* color: #685206; */
+            font-family: 'Helvetica Neue', sans-serif;
+            /* font-size: 14px; */
+            line-height: 24px;
+            margin: 0 0 24px;
+            /* text-align: justify; */
+            text-align: center;
+            text-justify: inter-word;
+        }
+
+
+
         .card {
             position: relative;
-            width: 300px;
-            height: 425px;
+            width: 600px;
+            height: 850px;
             border: 10px solid #9612eb;
             margin: 60px auto 0 auto;
             box-shadow: inset 10px 0px 15px 0px rgba(0, 0, 0, 0.1);
@@ -44,7 +80,7 @@
             margin: 60px auto 60px auto;
         }
 
-        .card p {
+        /* .card p {
             font-size: 1.1em;
             line-height: 1.4;
             font-family: 'Nobile';
@@ -52,7 +88,7 @@
             font-style: italic;
             text-align: center;
             margin: 30px auto 0px auto;
-        }
+        } */
 
         .card .front {
             position: absolute;
@@ -67,17 +103,17 @@
             background-size: contain;
             transform-style: preserve-3d;
             transform-origin: 0% 50%;
-            transform: perspective(800px) rotateY(0deg);
+            transform: perspective(1200px) rotateY(0deg);
             transition: all 0.8s ease-in-out;
         }
 
         .card:hover .front {
-            transform: perspective(800px) rotateY(-170deg);
+            transform: perspective(1200px) rotateY(-170deg);
             background-color: #41718d;
         }
 
         .card:hover .back {
-            transform: perspective(800px) rotateY(-170deg);
+            transform: perspective(1200px) rotateY(-170deg);
             box-shadow: 7px 0px 5px 0px rgba(0, 0, 0, 0.3), inset 2px 0px 15px 0px rgba(0, 0, 0, 0.1);
             background-color: #d2dcd2;
         }
@@ -92,7 +128,7 @@
             filter: drop-shadow(2px 2px 4px rgba(0, 0, 0, .5));
             transform-style: preserve-3d;
             transform-origin: 0% 50%;
-            transform: perspective(800px) rotateY(0deg);
+            transform: perspective(1200px) rotateY(0deg);
             transition: all 0.8s ease-in-out;
             background-color: #e6f0e6;
             box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.1);
@@ -116,17 +152,26 @@
         <div class="back"></div>
         <div class="front">
             <div class="imgset">
-                <img width="100%"
-                    src="./bday-front.png">
+                <img width="100%" src="./bday-front.png">
             </div>
         </div>
         <div class="text-container">
-            <p id="head">Tillykke med fødselsdagen Nick!!!!!!</p>
-            <p>🇩🇰🇩🇰🇩🇰</p>
-            <p>Kortet her er tomt. Men det bliver det ikke ved med at være. Kig igen i morgen :)
+            <h1>Tillykke med fødselsdagen!</h1>
+            <h1>🎉</h1>
+            <p>Vi skal ind og høre/se/opleve impro-comedy sammen! <br>Olivia og Rebecca skal selvfølgelig med.
+                <br>
+                <br>
+                I kan vælge mellem<br>torsdag d. 23 November<br>og<br>torsdag d. 30 November.
+                <br>
+                <br>
+                Giv lyd hvilke datoer der passer bedst, så sørger vi for en fantastisk aften sammen!
+            <h1>🎭🌟</h1>
+            <br>
+            <br>
+
+            <p style="font-style: italic;">(Er i ikke med på et torsdagsarrangement, så siger i bare til. Så finder i en
+                anden dag👌)</p>
             </p>
-            <p>🇩🇰🇩🇰🇩🇰</p>
-            <p>Stort tillykke gamle dreng!</p>
         </div>
     </div>
 </body>
