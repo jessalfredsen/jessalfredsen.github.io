@@ -77,7 +77,35 @@
         .my-float {
             margin-top: 22px;
         }
+        /* GLOBAL STYLES */
+        
+        /* DEMO-SPECIFIC STYLES */
+        .typewriter h4{
+        /* color: #fff; */
+        /* font-family: monospace; */
+        overflow: hidden; /* Ensures the content is not revealed until the animation */
+        border-right: .15em solid orange; /* The typwriter cursor */
+        white-space: nowrap; /* Keeps the content on a single line */
+        margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+        /* letter-spacing: .15em; Adjust as needed */
+        animation: 
+            typing 4s steps(30, end),
+            blink-caret .5s infinite;
+        }
+
+        /* The typing effect */
+        @keyframes typing {
+        from { width: 0 }
+        to { width: 100% }
+        }
+
+        /* The typewriter cursor effect */
+        @keyframes blink-caret {
+        from, to { border-color: transparent }
+        50% { border-color: orange }
+        }
     </style>
+
 
     <link rel="stylesheet" type="text/css" crossorigin="anonymous"
         href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
@@ -179,10 +207,12 @@
 
             <div class="row justify-content-center">
                 <div class="col mt-3 text-sm-center fuse-core-extra"> 
-                    
-                    <h4 class="text-center font-weight-light">Empowering Businesses with Data-Driven Intelligence</h4>
+                    <div class="typewriter">
+                        <h4 >Empowering Businesses with Data-Driven Intelligence</h4>
+                    </div>
                     <br><br>
-                    At datageneration<span style="color:#e63946">.</span>ai, we specialize in transforming complex business challenges into simplified, actionable, data-driven solutions. With a robust foundation in software engineering and data science, we are adept at enabling companies to navigate the ever-evolving landscape of artificial intelligence. Our core competency lies in bridging the technical and business domains, ensuring a seamless integration of data-driven strategies to achieve your business goals.
+                    At datageneration<span style="color:#e63946">.</span>ai, we specialize in transforming complex business challenges into simplified, actionable, data-driven solutions. Our robust foundation in software engineering and data science, paired with our expertise in Large Language Models (LLMs), positions us at the forefront of the ever-evolving landscape of artificial intelligence. We excel in leveraging LLMs for generating high-quality synthetic data, enhancing our ability to provide innovative solutions.
+                    <!-- At datageneration<span style="color:#e63946">.</span>ai, we specialize in transforming complex business challenges into simplified, actionable, data-driven solutions. With a robust foundation in software engineering and data science, we are adept at enabling companies to navigate the ever-evolving landscape of artificial intelligence. Our core competency lies in bridging the technical and business domains, ensuring a seamless integration of data-driven strategies to achieve your business goals. -->
                     <!-- <br>
                     <h5 class="text-center font-weight-light">Consultancy Services</h5>
                     Assessing your data landscape and crafting a tailored roadmap to align with your business objectives.
@@ -197,8 +227,8 @@
                     Streamlining deployment processes with Docker, ensuring a rapid time-to-market. -->
 
                     <br><br>
-
-                    We excel in translating technical nuances into business opportunities. With a dual proficiency in business dialogues and technical execution, we bridge the gap between your strategic ambitions and the technological solutions required to realize them.
+                    Our core competency lies in bridging the technical and business domains, ensuring a seamless integration of data-driven strategies, including synthetic data generation, to achieve your business goals. We translate technical nuances into business opportunities, offering dual proficiency in business dialogues and technical execution. This unique combination enables us to bridge the gap between your strategic ambitions and the technological solutions required to realize them, with a special emphasis on the transformative capabilities of LLMs.
+                    <!-- We excel in translating technical nuances into business opportunities. With a dual proficiency in business dialogues and technical execution, we bridge the gap between your strategic ambitions and the technological solutions required to realize them. -->
                 </div>
             </div>
 
