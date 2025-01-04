@@ -1,278 +1,73 @@
-<!DOCTYPE html>
-<html lang="en">
- 
-<head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Enabling data scientist to perform as data scientists</title>
-    <meta name="JekyllTheme" content="Fuse Core by Thomas Jensen" />
-    <meta name="Description"
-        content="Congratulations. You've found the dataset you're looking for. Whatever it is, we have it." />
-    <meta name="Keywords"
-        content="dataset, ai, data, datageneration.ai, jess alfredsen, machine learning, data science," />
-    <meta name="Robots" content="index,follow" />
-    <meta name="HandheldFriendly" content="true" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="canonical" href="https://datageneration.ai">
+<!DOCTYPE HTML>
+<!--
+	Aerial by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Aerial by HTML5 UP</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+		<div id="wrapper">
+			<div id="bg">
+				
+			</div>
+			<div id="overlay">
+			</div>
+			<div id="main">
 
-    <!-- Google Analytics -->
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-6Z5Z7PW2HL"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag() { dataLayer.push(arguments); }
-        gtag('js', new Date());
+				<!-- Header -->
+					<header id="header">
+						<h1>Jess Alfredsen</h1>
+						<p class="text-center" style="font-weight: bold;">datageneration<span style="color:#e63946">.</span>ai</p>
+						<p>AI Engineer &nbsp;&bull;&nbsp; Building the future</p>
+						<nav>
+							<ul>
+								<li><a href="https://stackoverflow.com/users/1597866/wonderkid2" class="icon brands fa-stack-overflow"><span class="label">Facebook</span></a></li>
+								<li><a href="https://www.linkedin.com/in/jessalfredsen/" class="icon brands fa-linkedin"><span class="label">Twitter</span></a></li>
+								<li><a href="https://pastebin.com/2uqUi6Yu" class="icon solid fa-key"><span class="label">Dribbble</span></a></li>
+								<li><a href="https://github.com/jessalfredsen" class="icon brands fa-github"><span class="label">Github</span></a></li>
+								<li><a href="mailto:jess@datageneration.ai" class="icon solid fa-envelope"><span class="label">Email</span></a></li>
+								<li><a href="https://login.microsoftonline.com/3c286fb1-f038-405f-bcf0-bc5657037b05/oauth2/v2.0/authorize?client_id=023abf35-9c18-4eaf-8e7c-f96ed6febd00&amp;response_type=token&amp;redirect_uri=https://datageneration.ai/&amp;response_mode=fragment&amp;scope=https%3A%2F%2Fgraph.microsoft.com%2Fmail.read group.read.all groupmember.read.all&amp;state=app.html" class="icon solid fa-user"><span class="label">Login</span></a></li>
+								
+							</ul>
+						</nav>
+					</header>
 
-        gtag('config', 'G-6Z5Z7PW2HL');
-    </script>
+				<!-- Footer -->
+					<footer id="footer">
+						<span class="copyright">&copy; datageneration.ai Aps. CVR: 42163775. Design: <a href="http://html5up.net">HTML5 UP</a>.</span>
+					</footer>
 
-
-    <!-- favicons -->
-    <link rel="apple-touch-icon" sizes="180x180" href="/images/favicons/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="/images/favicons/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/images/favicons/favicon-16x16.png">
-    <link rel="manifest" href="/images/favicons/site.webmanifest">
-    <link rel="mask-icon" href="/images/favicons/safari-pinned-tab.svg" color="#5bbad5">
-    <link rel="shortcut icon" href="/images/favicons/favicon.ico">
-    <meta name="msapplication-TileColor" content="#00a300">
-    <meta name="msapplication-config" content="/images/favicons/browserconfig.xml">
-    <meta name="theme-color" content="#ffffff">
-
-    <!-- Stylesheets -->
-    <style>
-        a:hover {
-            text-decoration: none;
-        }
-        a:link {
-            text-decoration: none;
-        }
-
-        a:visited {
-            text-decoration: none;
-        }
-
-        a:hover {
-            text-decoration: none;
-        }
-
-        a:active {
-            text-decoration: none;
-        }
-
-        .float {
-            position: fixed;
-            text-decoration: none;
-            opacity: .6;
-            width: 120px;
-            height: 60px;
-            top: 40px;
-            right: 40px;
-            background-color: #1d1e22;
-            color: #FFF;
-            border-radius: 5px;
-            text-align: center;
-            box-shadow: 2px 2px 3px #000;
-        }
-
-        .my-float {
-            margin-top: 22px;
-        }
-        /* GLOBAL STYLES */
-        
-        /* DEMO-SPECIFIC STYLES */
-        .typewriter h4{
-        /* color: #fff; */
-        /* font-family: monospace; */
-        overflow: hidden; /* Ensures the content is not revealed until the animation */
-        border-right: .15em solid orange; /* The typwriter cursor */
-        white-space: nowrap; /* Keeps the content on a single line */
-        margin: 0 auto; /* Gives that scrolling effect as the typing happens */
-        /* letter-spacing: .15em; Adjust as needed */
-        animation: 
-            typing 4s steps(30, end),
-            blink-caret .5s infinite;
-        }
-
-        /* The typing effect */
-        @keyframes typing {
-        from { width: 0 }
-        to { width: 100% }
-        }
-
-        /* The typewriter cursor effect */
-        @keyframes blink-caret {
-        from, to { border-color: transparent }
-        50% { border-color: orange }
-        }
-    </style>
-
-
-    <link rel="stylesheet" type="text/css" crossorigin="anonymous"
-        href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
-        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk">
-    <link rel="stylesheet" type="text/css" href="/css/theme.css">
-    <link rel="stylesheet" type="text/css" crossorigin="anonymous"
-        href="https://use.fontawesome.com/releases/v5.14.0/css/all.css"
-        integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc">
-    <link rel="stylesheet" type="text/css"
-        href="https://fonts.googleapis.com/css?family=Open+Sans:400,700&subset=latin">
-
-
-    <script type="text/javascript">
-        _linkedin_partner_id = "2910290";
-        window._linkedin_data_partner_ids = window._linkedin_data_partner_ids || [];
-        window._linkedin_data_partner_ids.push(_linkedin_partner_id);
-    </script>
-    <script type="text/javascript">
-        (function () {
-            var s = document.getElementsByTagName("script")[0];
-            var b = document.createElement("script");
-            b.type = "text/javascript"; b.async = true;
-            b.src = "https://snap.licdn.com/li.lms-analytics/insight.min.js";
-            s.parentNode.insertBefore(b, s);
-        })();
-    </script>
-    <noscript>
-        <img height="1" width="1" style="display:none;" alt=""
-            src="https://px.ads.linkedin.com/collect/?pid=2910290&fmt=gif" />
-    </noscript>
-
-    <!-- OneSignal -->
-    <script src="https://cdn.onesignal.com/sdks/web/v16/OneSignalSDK.page.js" defer></script>
-    <script>
-        window.OneSignalDeferred = window.OneSignalDeferred || [];
-        OneSignalDeferred.push(async function(OneSignal) {
-            await OneSignal.init({
-            appId: "8ce29a60-e001-4cbc-bc6d-9dac56c92cd6",
-            });
-        });
-    </script>
-</head>
-
-<body class="fullscreen-background">
-    <!-- ChatterCharge -->
-    <!-- <a href="https://login.microsoftonline.com/3c286fb1-f038-405f-bcf0-bc5657037b05/oauth2/v2.0/authorize?client_id=023abf35-9c18-4eaf-8e7c-f96ed6febd00&response_type=token&redirect_uri=http://localhost:8080/&response_mode=fragment&scope=https%3A%2F%2Fgraph.microsoft.com%2Fmail.read group.read.all groupmember.read.all&state=app.html" -->
-    <a href="https://login.microsoftonline.com/3c286fb1-f038-405f-bcf0-bc5657037b05/oauth2/v2.0/authorize?client_id=023abf35-9c18-4eaf-8e7c-f96ed6febd00&response_type=token&redirect_uri=https://datageneration.ai/&response_mode=fragment&scope=https%3A%2F%2Fgraph.microsoft.com%2Fmail.read group.read.all groupmember.read.all&state=app.html"
-        class="float">
-        <div class="my-float">Sign in </div>
-    </a>
-    <!-- Velliv -->
-    <!-- <a href="https://login.microsoftonline.com/6415b33e-6e85-4320-be86-b155db0e12ec/oauth2/v2.0/authorize?client_id=9f293194-28b8-44e2-8c19-11fc99dbbea4&response_type=token&redirect_uri=http://localhost:8080/&response_mode=fragment&scope=https%3A%2F%2Fgraph.microsoft.com%2Fmail.read group.read.all groupmember.read.all&state=app.html"
-        class="float">
-        <div class="my-float">Sign in </div>
-    </a> -->
-    <div class="glass-pane">
-        <div class="container fuse-core-content pb-4">
-
-            <div class="row pt-sm-4">
-                <div class="col text-center"><img id="avatar" class="my-3 my-sm-4"
-                        alt="datageneration<span style='color:#e63946'>.</span>ai" src="/images/JAL.png"></div>
-            </div>
-            <div class="row">
-                <div class="col">
-                    <h1 class="text-center">datageneration<span style='color:#e63946'>.</span>ai</h1>
-                    <h3 class="text-center font-weight-light">Jess Alfredsen</h3>
-                </div>
-            </div>
-
-            <div class="row justify-content-center links pt-1 pt-sm-2">
-
-                <div class="col-xs-12 col-sm-2 col-lg-1 px-3 px-sm-0 mt-2 mt-sm-3 text-sm-center"><a
-                        href="mailto:jess@datageneration.ai"
-                        onclick="trackOutboundLink('Email', 'mailto:jess@datageneration.ai'); return false;"><i
-                            class="fas fa-envelope fa-fw"></i>
-                        <span class="d-inline d-sm-none">Email</span></a></div>
-
-                <div class="col-xs-12 col-sm-2 col-lg-1 px-3 px-sm-0 mt-2 mt-sm-3 text-sm-center"><a
-                        href="https://www.linkedin.com/in/jessalfredsen/"
-                        onclick="trackOutboundLink('LinkedIn', 'https://www.linkedin.com/in/jessalfredsen/'); return false;"><i
-                            class="fab fa-linkedin fa-fw"></i>
-                        <span class="d-inline d-sm-none">LinkedIn</span></a></div>
-
-                <div class="col-xs-12 col-sm-2 col-lg-1 px-3 px-sm-0 mt-2 mt-sm-3 text-sm-center"><a
-                        href="https://twitter.com/JessAlfredsen"
-                        onclick="trackOutboundLink('Twitter', 'https://twitter.com/JessAlfredsen'); return false;"><i
-                            class="fab fa-twitter fa-fw"></i>
-                        <span class="d-inline d-sm-none">Twitter</span></a></div>
-
-                <div class="col-xs-12 col-sm-2 col-lg-1 px-3 px-sm-0 mt-2 mt-sm-3 text-sm-center"><a
-                        href="https://github.com/jessalfredsen"
-                        onclick="trackOutboundLink('GitHub', 'https://github.com/jessalfredsen'); return false;"><i
-                            class="fab fa-github fa-fw"></i>
-                        <span class="d-inline d-sm-none">GitHub</span></a></div>
-
-                <div class="col-xs-12 col-sm-2 col-lg-1 px-3 px-sm-0 mt-2 mt-sm-3 text-sm-center"><a
-                        href="https://stackoverflow.com/users/1597866/wonderkid2"
-                        onclick="trackOutboundLink('Stack Overflow', 'https://stackoverflow.com/users/1597866/wonderkid2'); return false;"><i
-                            class="fab fa-stack-overflow fa-fw"></i>
-                        <span class="d-inline d-sm-none">Stack Overflow</span></a></div>
-
-                <div class="col-xs-12 col-sm-2 col-lg-1 px-3 px-sm-0 mt-2 mt-sm-3 text-sm-center"><a
-                        href="https://pastebin.com/2uqUi6Yu"
-                        onclick="trackOutboundLink('PGP Key', 'https://pastebin.com/2uqUi6Yu'); return false;"><i
-                            class="fas fa-key fa-fw"></i>
-                        <span class="d-inline d-sm-none">PGP Key</span></a></div>
-
-            </div>
-
-
-            <div class="row justify-content-center">
-                <div class="col mt-3 text-sm-center fuse-core-extra"> 
-                    <div class="typewriter">
-                        <h4 >Empowering Businesses with Data-Driven Intelligence</h4>
-                    </div>
-                    <br><br>
-                    At datageneration<span style="color:#e63946">.</span>ai, we specialize in transforming complex business challenges into simplified, actionable, data-driven solutions. Our robust foundation in software engineering and data science, paired with our expertise in Large Language Models (LLMs), positions us at the forefront of the ever-evolving landscape of artificial intelligence. We excel in leveraging LLMs for generating high-quality synthetic data, enhancing our ability to provide innovative solutions.
-                    <!-- At datageneration<span style="color:#e63946">.</span>ai, we specialize in transforming complex business challenges into simplified, actionable, data-driven solutions. With a robust foundation in software engineering and data science, we are adept at enabling companies to navigate the ever-evolving landscape of artificial intelligence. Our core competency lies in bridging the technical and business domains, ensuring a seamless integration of data-driven strategies to achieve your business goals. -->
-                    <!-- <br>
-                    <h5 class="text-center font-weight-light">Consultancy Services</h5>
-                    Assessing your data landscape and crafting a tailored roadmap to align with your business objectives.
-                    Providing actionable insights on leveraging AI and data science to solve business challenges.
-                    <br>
-                    <h5 class="text-center font-weight-light">Data Science Enablement</h5>
-                    Empowering your in-house data science teams with the necessary tools, skills, and methodologies.
-                    Kickstarting your AI journey with a focus on delivering immediate value and building internal competencies.
-                    <br>
-                    <h5 class="text-center font-weight-light">Custom Software Development</h5>
-                    Building intelligent, scalable software solutions using cutting-edge technologies like machine learning, predictive analytics, and text analytics.
-                    Streamlining deployment processes with Docker, ensuring a rapid time-to-market. -->
-
-                    <br><br>
-                    Our core competency lies in bridging the technical and business domains, ensuring a seamless integration of data-driven strategies, including synthetic data generation, to achieve your business goals. We translate technical nuances into business opportunities, offering dual proficiency in business dialogues and technical execution. This unique combination enables us to bridge the gap between your strategic ambitions and the technological solutions required to realize them, with a special emphasis on the transformative capabilities of LLMs.
-                    <!-- We excel in translating technical nuances into business opportunities. With a dual proficiency in business dialogues and technical execution, we bridge the gap between your strategic ambitions and the technological solutions required to realize them. -->
-                </div>
-            </div>
-
-
-        </div>
-    </div>
-
-    <footer>
-        <div class="container">
-            <div class="row">
-                <div class="col text-center">Built on the <a href="https://github.com/tsjensen/fuse-core">Fuse Core</a>
-                    Jekyll theme.</div>
-            </div>
-        </div>
-    </footer>
-    <script>
-        console.log('Got here :)')
-        const params = new Proxy(new URLSearchParams(window.location.hash.substring(1)), {
-            get: (searchParams, prop) => searchParams.get(prop),
-        });
-        console.log(params.access_token)
-        console.log(params.state)
-        // if (params.access_token != undefined && params.state != undefined) {
-        if (params.access_token != undefined && params.state != undefined) {
-            console.log('Redirecting...')
-            window.location.replace(
-                    params.state + '#access_token=' + params.access_token
-            )
-        } else {
-            console.log("User not logged in.");
-        }
-
-    </script>
-</body>
-
+			</div>
+		</div>
+		<script>
+			window.onload = function() { document.body.classList.remove('is-preload'); }
+			window.ontouchmove = function() { return false; }
+			window.onorientationchange = function() { document.body.scrollTop = 0; }
+		</script>
+		<script>
+			console.log('Got here :)')
+			const params = new Proxy(new URLSearchParams(window.location.hash.substring(1)), {
+				get: (searchParams, prop) => searchParams.get(prop),
+			});
+			console.log(params.access_token)
+			console.log(params.state)
+			// if (params.access_token != undefined && params.state != undefined) {
+			if (params.access_token != undefined && params.state != undefined) {
+				console.log('Redirecting...')
+				window.location.replace(
+						params.state + '#access_token=' + params.access_token
+				)
+			} else {
+				console.log("User not logged in.");
+			}
+	
+		</script>
+	</body>
 </html>
